@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xmap-styles xmlns="urn:xmind:xmap:xmlns:style:2.0" xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:svg="http://www.w3.org/2000/svg" version="2.0"><automatic-styles><style id="STY@8BEEGfuwXLDQYU_PGbUQMg==" type="relationship">
+			<relationship-properties arrow-begin-class="org.xmind.arrowShape.dot" arrow-end-class="org.xmind.arrowShape.triangle" line-color="#2FC19D" line-pattern="solid" line-width="5pt" shape-class="org.xmind.relationshipShape.angled"/>
+		</style><style id="STY@oE577J4Ej6Fd4-cCHdaUCA==" type="topic">
+			<topic-properties fo:font-size="16pt" line-class="org.xmind.branchConnection.roundedElbow" line-tapered="tapered" line-width="5pt" multi-line-colors="#ac6060 #acac60 #60ac60 #60acac #6060ac #ac60ac" shape-class="org.xmind.topicShape.ellipse" svg:fill="#FF8000"/>
+		</style><style id="STY@YBnXdk7SzMEqE1nrfNIgQw==" type="map">
+			<map-properties rainbowcolor="true" spinylines="true" svg:fill="#E9EBC7"/>
+		</style><style id="STY@-EW4XZsso1ZfGrTz8U74zA==" type="topic">
+			<topic-properties fo:font-weight="bold" line-width="5pt" svg:fill="#A9BAE2"/>
+		</style><style id="STY@e5WqwJpf2h4wZ9xEHlpmJw==" type="topic">
+			<topic-properties fo:color="#9C3C1F" fo:font-size="10pt" fo:font-weight="false" text-italic="normal"/>
+		</style><style id="STY@UN6QwaRTa3q6ZK9ZJ9xC1Q==" type="topic">
+			<topic-properties fo:font-weight="bold" line-width="2pt" svg:fill="#DAEFCF"/>
+		</style><style id="STY@dLdhSBMOVCy62w65iFprSA==" type="boundary">
+			<boundary-properties line-color="#E24343" line-pattern="solid" line-width="5pt" shape-class="org.xmind.boundaryShape.scallops" svg:fill="#EEE311"/>
+		</style></automatic-styles><master-styles><style id="brainy.defaultGenre.comic" name="%comic" type="theme"><theme-properties>
+			<default-style style-family="relationship" style-id="STY@8BEEGfuwXLDQYU_PGbUQMg=="/>
+			<default-style style-family="centralTopic" style-id="STY@oE577J4Ej6Fd4-cCHdaUCA=="/>
+			<default-style style-family="map" style-id="STY@YBnXdk7SzMEqE1nrfNIgQw=="/>
+			<default-style style-family="floatingTopic" style-id="STY@-EW4XZsso1ZfGrTz8U74zA=="/>
+			<default-style style-family="subTopic" style-id="STY@e5WqwJpf2h4wZ9xEHlpmJw=="/>
+			<default-style style-family="mainTopic" style-id="STY@UN6QwaRTa3q6ZK9ZJ9xC1Q=="/>
+			<default-style style-family="boundary" style-id="STY@dLdhSBMOVCy62w65iFprSA=="/>
+		</theme-properties></style></master-styles><styles><style id="5dtee7e7o74bl4riu41g2mt43a" type="topic"><topic-properties fo:font-weight="normal"/></style></styles></xmap-styles>
