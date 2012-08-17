@@ -2,7 +2,6 @@
 # -*- coding: utf-8 -*-
 
 require "optparse"
-require 'constant'
 require 'pp'
 
 DEBUG = true
@@ -20,9 +19,6 @@ class Core
   def export()
     
   end
-
-  
-  
 end
 
 
@@ -71,8 +67,10 @@ class Command
     opt.on('-o FILE','--output FILE','Output Filename') {|v| @option[:file_output] = v }
     
     # Format(Output)
-    output_formats = %w(markdown[default] org html latex rst plain)
-    str_output_formats = "Output formats: " + output_formats.join(', ') + ", ... (for other formats: see pandoc --help)"
+    output_formats_short = %w(markdown[default] org html latex rst plain)
+    output_formats_long = %w(native json html html5 html+lhs html5+lhs s5 slidy slideous dzslides docbook opendocument latex latex+lhs beamer beamer+lhs context texinfo man markdown markdown+lhs plain rst rst+lhs mediawiki textile rtf org asciidoc odt docx epub)
+    
+    str_output_formats = "Output formats: " + output_formats_short.join(', ') + ", ... (for other formats: see pandoc --help)"
     
     opt.on('-t FORMAT','--to=FORMAT',str_output_formats) {|v| @option[:format_to] = v }
     opt.on('-w FORMAT','--write=FORMAT',str_output_formats) {|v| @option[:format_to] = v }
@@ -90,17 +88,14 @@ class Command
       opt.parse!(@argv)
     rescue => e
       # Catch exception when an option is wrong
-      p e
-      puts
       puts opt
-      exit
+      abort(e)
     end
     
     ## Check whether the filename ends with ".xmind"
     if not (@option[:file_input] =~ /^.*\.xmind$/)
-      puts "ERROR: filename should end with \".xmind\""
       puts opt
-      exit
+      abort("ERROR: filename should end with \".xmind\"")
     end
     
     
