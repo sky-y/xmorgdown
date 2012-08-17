@@ -1,1 +1,776 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><xmap-content xmlns="urn:xmind:xmap:xmlns:content:2.0" xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink" version="2.0"><sheet id="7pp5n9e1mebsnm5d3a364vdqil" theme="brainy.defaultGenre.comic"><topic id="5euu98f3e2t66bet0s219j2ttf" structure-class="org.xmind.ui.map.clockwise" timestamp="1342467157701"><title>MOrgDown(仮)</title><children><topics type="attached"><topic id="74jqbb9eabteukcmvacnpd2q94" timestamp="1342448497493"><title>方針</title><children><topics type="attached"><topic id="0aucej87426hc2e5f5figam986" timestamp="1342448521576"><title>まずは紙で考える</title><marker-refs><marker-ref marker-id="star-yellow"/></marker-refs></topic><topic id="1e1g2smf4o13dhpi9abbj7d1h4" timestamp="1342448497483"><title>完璧を求めない！</title><children><topics type="attached"><topic id="3qovfth5hrgrj1rfa67qg7q6r7" timestamp="1342339457656"><title>Rubyで実装</title></topic><topic id="1onbblmco1fbmas6ngcr6gpfik" style-id="5dtee7e7o74bl4riu41g2mt43a" timestamp="1342448516414"><title>まずは最小限の実装で完成させる</title><marker-refs><marker-ref marker-id="star-yellow"/></marker-refs></topic><topic id="64ipqi9aeq55ik69jb2ue91oov" timestamp="1342339749239"><title>のちにMacRubyやapplescriptなどを使う</title></topic></topics></children></topic></topics></children></topic><topic id="0j11s5dak4tbljb3itn8snlrc9" timestamp="1342448485655"><title>案</title><children><topics type="attached"><topic id="3d5i24evb49cmn3ihm72a2q79v" timestamp="1342447131834"><title>マインドマップの階層ごとにタグ・書式を設定できるようにする</title><children><topics type="attached"><topic id="1rm40f7kb6qng38k4t1gju2ibo" timestamp="1342446669818"><title>設定ファイル</title></topic><topic id="3vk4nu4la6acrn4hnh4opommlc" timestamp="1342446677021"><title>GUIで設定</title></topic><topic id="42u06r1n0da2533e46de2lc45e" timestamp="1342446728887"><title>ホームフォルダに置いてる設定ファイルがデフォルト</title></topic><topic id="5vua0mufugferq9e7eb3tvc12t" timestamp="1342447141198"><title>フォーマット：yaml?</title></topic></topics></children></topic><topic id="12u91uj0bqp4kngd56kl3456ta" timestamp="1342448089109"><title>MacのServiceから呼びだしたい</title></topic></topics></children></topic><topic id="3ia4vqod14ilfmo16gjro10mkk" timestamp="1342466926177"><title>クラスの設計をする</title><children><topics type="attached"><topic id="2fej6u603j182ndfqgeqbvmgat" timestamp="1342467119534"><title>Parser</title><children><topics type="attached"><topic id="2c7kcg06b5iu2n15ogfpve5j12" timestamp="1342467242252"><title>XMindParser</title><children><topics type="attached"><topic id="5tfti1pe26pedd8ugt8rjoiqke" timestamp="1342467255021"><title>出力：木構造データ</title></topic></topics></children></topic></topics></children></topic><topic id="4igsd8jb4u7nr5ekh97u75qb0a" timestamp="1342467217492"><title>Exporter</title><children><topics type="attached"><topic id="69pauihfp8o00abgqrosicmkkp" timestamp="1342467102633"><title>OrgExporter</title></topic><topic id="29r95jrqaes62plk2ak438en8e" timestamp="1342467217495"><title>MarkdownExporter</title><children><topics type="attached"><topic id="0bap6m3e0u4somr5r3eab9tusc" timestamp="1342467217492"><title>HTMLExporter</title></topic></topics></children></topic></topics></children></topic><topic id="5i6fr9rgsgpbtt07cc9hrk7040" timestamp="1342466989663"><title>Interface</title><children><topics type="attached"><topic id="5qkmdd66l8epc5sck3hh7m80l0" timestamp="1342466989659"><title>main関数にあたるもの</title></topic><topic id="2a0guqksdqd5ea1hapt22ji5me" timestamp="1342466975142"><title>オプション処理</title></topic></topics></children></topic><topic id="208ru1me19cjeb7s5ei8slnoah" timestamp="1342467040428"><title>ConfigManager</title><children><topics type="attached"><topic id="6dv7ejj55s284pdv4fvd6k319n" timestamp="1342467038796"><title>設定ファイル読み込み・書き出し</title></topic><topic id="6sto12o5k4q2htrk0sj2s1eabg" timestamp="1342467043809"><title>設定の管理</title></topic></topics></children></topic></topics></children></topic><topic id="24de3a49ve3rf2913t33i9mvt7" timestamp="1342467166369"><title>UnitTestを作る</title></topic><topic id="7ck3vrf0i6lacq7adpoerq03e1" timestamp="1342448555404"><title>インタフェース</title><children><topics type="attached"><topic id="5s5fmtv5eelpneb2bl28usocmi" timestamp="1342448555011"><title>コマンドライン</title></topic><topic id="1r6t71c4612ctqsd1pghb8m055" timestamp="1342448557395"><title>GUI</title></topic></topics></children></topic><topic id="6fqqb8c4av95ikbe4uoqekgj4j" timestamp="1342446614098"><title>出力フォーマット</title><children><topics type="attached"><topic id="2t4cq68a9v91nr4sgc2a85r7ih" timestamp="1342339482201"><title>org</title></topic><topic id="431rac65ch4cvjnn07e66si4sm" timestamp="1342339485055"><title>markdown</title></topic><topic id="7hb1lrpioh5rhm4p2erp9hm2ur" timestamp="1342447527954"><title>html</title><children><topics type="attached"><topic id="1fa73iapa69n0n245idj9neg1l" timestamp="1342447538825"><title>markdownからはき出せるらしい</title></topic></topics></children></topic></topics></children></topic><topic id="6hi5s34i9gntrd31ifevne8rdi" timestamp="1342447898885"><title>入力フォーマット</title><children><topics type="attached"><topic id="78trna32cv8j29nuu8s61vongj" timestamp="1342447930149" xlink:href="http://code.google.com/p/xmind3/wiki/XMindFileFormat"><title>XMind</title></topic><topic id="5r8ph2r2u7meb6vkjaluk4mngn" timestamp="1342447911297" xlink:href="http://freemind.sourceforge.net/wiki/index.php/File_format"><title>FreeMind</title></topic></topics></children></topic><topic id="5n56lr7r7p1j38828o04re50gg" timestamp="1342448021414"><title>命名</title><children><topics type="attached"><topic id="53hnkt58dbcm901gh9c65tdi4b" timestamp="1342448004820"><title>MindOrgDown</title></topic><topic id="0n003v4np8jj28kuae7e5c2hql" timestamp="1342448049044"><title>MOrgdown</title></topic></topics></children></topic></topics></children></topic><title>Sheet 1</title></sheet></xmap-content>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xmap-content xmlns="urn:xmind:xmap:xmlns:content:2.0" xmlns:fo="http://www.w3.org/1999/XSL/Format"
+    xmlns:svg="http://www.w3.org/2000/svg" xmlns:xhtml="http://www.w3.org/1999/xhtml"
+    xmlns:xlink="http://www.w3.org/1999/xlink" version="2.0">
+    <sheet id="7pp5n9e1mebsnm5d3a364vdqil" theme="brainy.defaultGenre.comic">
+        <topic id="5euu98f3e2t66bet0s219j2ttf" structure-class="org.xmind.ui.map.clockwise"
+            timestamp="1343205973793">
+            <title>MOrgDown(仮)</title>
+            <children>
+                <topics type="attached">
+                    <topic id="74jqbb9eabteukcmvacnpd2q94" timestamp="1342448497493">
+                        <title>方針</title>
+                        <children>
+                            <topics type="attached">
+                                <topic id="0aucej87426hc2e5f5figam986" timestamp="1342448521576">
+                                    <title>まずは紙で考える</title>
+                                    <marker-refs>
+                                        <marker-ref marker-id="star-yellow"/>
+                                    </marker-refs>
+                                </topic>
+                                <topic id="1e1g2smf4o13dhpi9abbj7d1h4" timestamp="1342448497483">
+                                    <title>完璧を求めない！</title>
+                                    <children>
+                                        <topics type="attached">
+                                            <topic id="3qovfth5hrgrj1rfa67qg7q6r7"
+                                                timestamp="1342339457656">
+                                                <title>Rubyで実装</title>
+                                            </topic>
+                                            <topic id="1onbblmco1fbmas6ngcr6gpfik"
+                                                style-id="5dtee7e7o74bl4riu41g2mt43a"
+                                                timestamp="1342448516414">
+                                                <title>まずは最小限の実装で完成させる</title>
+                                                <marker-refs>
+                                                  <marker-ref marker-id="star-yellow"/>
+                                                </marker-refs>
+                                            </topic>
+                                            <topic id="64ipqi9aeq55ik69jb2ue91oov"
+                                                timestamp="1342339749239">
+                                                <title>のちにMacRubyやapplescriptなどを使う</title>
+                                            </topic>
+                                        </topics>
+                                    </children>
+                                </topic>
+                            </topics>
+                        </children>
+                    </topic>
+                    <topic id="0j11s5dak4tbljb3itn8snlrc9" timestamp="1343203313209">
+                        <title>案</title>
+                        <children>
+                            <topics type="attached">
+                                <topic id="3d5i24evb49cmn3ihm72a2q79v" timestamp="1342447131834">
+                                    <title>マインドマップの階層ごとにタグ・書式を設定できるようにする</title>
+                                    <children>
+                                        <topics type="attached">
+                                            <topic id="1rm40f7kb6qng38k4t1gju2ibo"
+                                                timestamp="1342446669818">
+                                                <title>設定ファイル</title>
+                                            </topic>
+                                            <topic id="3vk4nu4la6acrn4hnh4opommlc"
+                                                timestamp="1342446677021">
+                                                <title>GUIで設定</title>
+                                            </topic>
+                                            <topic id="42u06r1n0da2533e46de2lc45e"
+                                                timestamp="1342446728887">
+                                                <title>ホームフォルダに置いてる設定ファイルがデフォルト</title>
+                                            </topic>
+                                            <topic id="5vua0mufugferq9e7eb3tvc12t"
+                                                timestamp="1342447141198">
+                                                <title>フォーマット：yaml?</title>
+                                            </topic>
+                                        </topics>
+                                    </children>
+                                </topic>
+                                <topic id="12u91uj0bqp4kngd56kl3456ta" timestamp="1342448089109">
+                                    <title>MacのServiceから呼びだしたい</title>
+                                </topic>
+                                <topic id="1pgk5hjaqsbeciumbvdghrqgjk" timestamp="1343204889785">
+                                    <title>XSLTを使ってXMLからHTMLに変換出来るらしい</title>
+                                    <children>
+                                        <topics type="attached">
+                                            <topic id="2on6sgl5n5mndh0e0tonsp468b"
+                                                timestamp="1343204888794"
+                                                xlink:href="http://prasinos.blog2.fc2.com/blog-entry-735.html">
+                                                <title>RubyのNokogiriでそれできる</title>
+                                            </topic>
+                                            <topic id="164dssmvdrfrsa7478apl1158r"
+                                                timestamp="1343204906103">
+                                                <title>あとはXSLTスタイルシートを作ればいい</title>
+                                            </topic>
+                                        </topics>
+                                    </children>
+                                </topic>
+                                <topic id="4bdv0l7ri16qbtko3p4vqq9rno" timestamp="1343204944896">
+                                    <title>HTMLからpandocでorgやmarkdownに変換ができる</title>
+                                    <children>
+                                        <topics type="attached">
+                                            <topic id="3mal0tv2ui852ok25s89ns6p6a"
+                                                timestamp="1343204964325"
+                                                xlink:href="https://github.com/alphabetum/pandoc-ruby">
+                                                <title>PandocRubyが使える</title>
+                                            </topic>
+                                        </topics>
+                                    </children>
+                                </topic>
+                            </topics>
+                        </children>
+                    </topic>
+                    <topic id="147qs16ibg2tuu6nt6drb0cv32" timestamp="1343205485692">
+                        <title>アルゴリズム</title>
+                        <children>
+                            <topics type="attached">
+                                <topic id="0aop92aocslc712aglgd85iris" timestamp="1343205416711">
+                                    <title>準備</title>
+                                    <children>
+                                        <topics type="attached">
+                                            <topic id="0shelmlm7kq23kll94a56j96cp"
+                                                timestamp="1343205422062">
+                                                <title>XSLTファイルを作る</title>
+                                            </topic>
+                                        </topics>
+                                    </children>
+                                </topic>
+                                <topic id="0jc3er5d2hltd3l2oums1sj41b" timestamp="1343205280176">
+                                    <title>XMindファイル(.xmind)をzipアーカイブと見なして解凍する</title>
+                                </topic>
+                                <topic id="09v48uukt50e80m9im2kjedi6n" timestamp="1343205376022">
+                                    <title>XMLファイル content.xml を取り出し、Nokogiri::XMLで読み出す</title>
+                                </topic>
+                                <topic id="6m47hp92oif7loa2f2pmln39md" timestamp="1343205408110">
+                                    <title>XSLTを使ってcontent.xmlをHTMLファイルに変換する</title>
+                                </topic>
+                                <topic id="5s9i9hqcj24s0902sf3vra5qib" timestamp="1343205539605">
+                                    <title>Pandocを使い、所望の出力ファイル（Markdown, Org, ...）を得る</title>
+                                </topic>
+                            </topics>
+                        </children>
+                        <numbering number-format="org.xmind.numbering.arabic"/>
+                    </topic>
+                    <topic id="198oc0749f6u6v7igkrk936voc" timestamp="1343205992634">
+                        <title>（新）クラスの設計</title>
+                        <children>
+                            <topics type="attached">
+                                <topic id="373p1tvgqtajicb7l5ffqce19p" timestamp="1342467119534">
+                                    <title>Parser</title>
+                                    <children>
+                                        <topics type="attached">
+                                            <topic id="65t6jp6fht7ei9nkc88dh6kni8"
+                                                timestamp="1343206023274">
+                                                <title>XMindParser</title>
+                                                <children>
+                                                  <topics type="attached">
+                                                  <topic id="26uneir8aqal224vqsghg734c8"
+                                                  timestamp="1343206035535">
+                                                  <title>入力：XMindファイル、XSLTファイル</title>
+                                                  <children>
+                                                  <topics type="attached">
+                                                  <topic id="6gpbecs4geg01f7evgvmu0n487"
+                                                  timestamp="1342468380068">
+                                                  <title>unzip</title>
+                                                  </topic>
+                                                  </topics>
+                                                  </children>
+                                                  </topic>
+                                                  <topic id="2ke7mdd592535m2j6jkm3ij6la"
+                                                  timestamp="1343206021450">
+                                                  <title>出力：HTMLファイル</title>
+                                                  </topic>
+                                                  <topic id="1h1ebrl88ul2q730op4j0ggdlu"
+                                                  timestamp="1342475956637">
+                                                  <title>ライブラリ：Nokogiri</title>
+                                                  </topic>
+                                                  </topics>
+                                                </children>
+                                            </topic>
+                                        </topics>
+                                    </children>
+                                </topic>
+                                <topic id="6qf6q9f3vd4acg763jdhqgnrof" timestamp="1343206002545">
+                                    <title>Exporter</title>
+                                    <children>
+                                        <topics type="attached">
+                                            <topic id="2023p2snpdn0qj19vanmm93h3j"
+                                                timestamp="1342477604534">
+                                                <title>Exporter</title>
+                                                <children>
+                                                  <topics type="attached">
+                                                  <topic id="3tlrpgd3p3tji92bg8k5ppsrge"
+                                                  timestamp="1342477604529">
+                                                  <title>text()</title>
+                                                  </topic>
+                                                  <topic id="4k74jg1v576kb0jd06fk6djoe6"
+                                                  timestamp="1342477484463">
+                                                  <title>print()</title>
+                                                  </topic>
+                                                  </topics>
+                                                </children>
+                                            </topic>
+                                        </topics>
+                                    </children>
+                                </topic>
+                                <topic id="12l2dcktpe064aoogkqgd1fv1b" timestamp="1342508720293">
+                                    <title>Core</title>
+                                    <children>
+                                        <topics type="attached">
+                                            <topic id="0o5r8trh2vjgqbreo2gdet1efg"
+                                                timestamp="1342478622194">
+                                                <title>parse()</title>
+                                            </topic>
+                                            <topic id="2hl130dkq5l9g28ffdphtbquup"
+                                                timestamp="1342478537816">
+                                                <title>export()</title>
+                                            </topic>
+                                            <topic id="0j4m3j5mh8g4h0vvrh5mc131s1"
+                                                timestamp="1342478543254">
+                                                <title>write()</title>
+                                            </topic>
+                                            <topic id="34prqkr40erp4j3qemcthcc8s4"
+                                                timestamp="1343206054547">
+                                                <title>変数</title>
+                                                <children>
+                                                  <topics type="attached">
+                                                  <topic id="587vutbvs8j9ugqetl13srhgj5"
+                                                  timestamp="1342508818511">
+                                                  <title>XMindファイル（XML）</title>
+                                                  </topic>
+                                                  <topic id="2nh5vhc8n8gdhmks495v990bdn"
+                                                  timestamp="1343206067240">
+                                                  <title>XSLTファイル（オプション）</title>
+                                                  </topic>
+                                                  <topic id="4e24uqd7guu3277l4um4li4d4q"
+                                                  timestamp="1342508776376">
+                                                  <title>出力ファイル名</title>
+                                                  </topic>
+                                                  <topic id="1do2knb7kv07c4m0lh8vitrk7p"
+                                                  timestamp="1342508764183">
+                                                  <title>出力設定</title>
+                                                  </topic>
+                                                  </topics>
+                                                </children>
+                                            </topic>
+                                        </topics>
+                                    </children>
+                                </topic>
+                                <topic id="399t14d17s2cj91ko0qfj3bb0e" timestamp="1342509385009">
+                                    <title>Command</title>
+                                    <children>
+                                        <topics type="attached">
+                                            <topic id="4ra58vbtrhck29ueg906qi62pi"
+                                                timestamp="1342466989659">
+                                                <title>main関数にあたるもの</title>
+                                            </topic>
+                                            <topic id="3h6hil3mgt5esb4vg303ajrec4"
+                                                timestamp="1342512492906">
+                                                <title>変数</title>
+                                                <children>
+                                                  <topics type="attached">
+                                                  <topic id="0hv22uf7ah58jadgcmo0rc98n1"
+                                                  timestamp="1342512506523">
+                                                  <title>@option[:file_input] XMindファイル名</title>
+                                                  </topic>
+                                                  <topic id="44mjmchk1lsi9g97mjhrmnv7hk"
+                                                  timestamp="1342512514255">
+                                                  <title>@option[:file_output] 出力ファイル名</title>
+                                                  </topic>
+                                                  <topic id="2ii7hivu4ijub3s89tjsjmlia6"
+                                                  timestamp="1342512538222">
+                                                  <title>@option[:file_config] 設定ファイル名</title>
+                                                  </topic>
+                                                  <topic id="382etln9mj0mijh9ngc1dkt0bh"
+                                                  timestamp="1342512540746">
+                                                  <title>@option[:format] フォーマット(org, md,
+                                                  html)</title>
+                                                  </topic>
+                                                  </topics>
+                                                </children>
+                                            </topic>
+                                            <topic id="22sklp7h4jommgkl0ikuvdmakg"
+                                                timestamp="1342509385015">
+                                                <title>メソッド</title>
+                                                <children>
+                                                  <topics type="attached">
+                                                  <topic id="25fl5bgcihvocg8hdsi7udjgjq"
+                                                  timestamp="1342509385009">
+                                                  <title>parse_command(argv)</title>
+                                                  </topic>
+                                                  </topics>
+                                                </children>
+                                            </topic>
+                                            <topic id="3c8qi9n48hbo9f368aaoi7a0e7"
+                                                timestamp="1342508542371">
+                                                <title>オプション処理</title>
+                                                <children>
+                                                  <topics type="attached">
+                                                  <topic id="175tq8mn8h2chq1vdutnht9k9e"
+                                                  timestamp="1342508548591"
+                                                  xlink:href="http://doc.ruby-lang.org/ja/1.9.2/library/optparse.html">
+                                                  <title>optparse</title>
+                                                  </topic>
+                                                  </topics>
+                                                </children>
+                                            </topic>
+                                            <topic id="3vo9be4geg80p9un4qcnq74jv8"
+                                                timestamp="1342477719692">
+                                                <title>オプション項目</title>
+                                                <children>
+                                                  <topics type="attached">
+                                                  <topic id="3t5v2699gep5rkjl9j1rbu97a8"
+                                                  timestamp="1342477718169">
+                                                  <title>(-i) XMindファイル名</title>
+                                                  </topic>
+                                                  <topic id="6cs8c8134g5rkg6900jb00o1vv"
+                                                  timestamp="1342477685709">
+                                                  <title>-o 出力ファイル名</title>
+                                                  </topic>
+                                                  <topic id="4tipdkv7dpc29c43td2j9ea5gc"
+                                                  timestamp="1342477729710">
+                                                  <title>-c 設定ファイル名</title>
+                                                  </topic>
+                                                  <topic id="6avhsi6vqmjgksv6h88265uau0"
+                                                  timestamp="1342477749471">
+                                                  <title>-f フォーマット(org, md, html)</title>
+                                                  </topic>
+                                                  </topics>
+                                                </children>
+                                            </topic>
+                                        </topics>
+                                    </children>
+                                </topic>
+                                <topic id="1ucuhgoq97fvpctuv3ta1vood9" timestamp="1342476651681">
+                                    <title>ConfigManager</title>
+                                    <children>
+                                        <topics type="attached">
+                                            <topic id="4j2btglu7v62ofp8iu5l8igd41"
+                                                timestamp="1342476493458">
+                                                <title>設定ファイル読み込み・書き出し</title>
+                                                <children>
+                                                  <topics type="attached">
+                                                  <topic id="7sup8o8gsgbo0rfjo5jf6nhbh9"
+                                                  timestamp="1342476495908">
+                                                  <title>yaml</title>
+                                                  </topic>
+                                                  </topics>
+                                                </children>
+                                            </topic>
+                                            <topic id="348cpeqb1bttjk6uhph1tksfj0"
+                                                timestamp="1342476783987">
+                                                <title>設定項目</title>
+                                                <children>
+                                                  <topics type="attached">
+                                                  <topic id="6nsq22nu8t41hsl58fpl38hl3b"
+                                                  timestamp="1342477381426">
+                                                  <title>depthとタグの対応</title>
+                                                  <children>
+                                                  <topics type="attached">
+                                                  <topic id="11pitqk8jd8kla9rjqbpm3tkos"
+                                                  timestamp="1342477349591">
+                                                  <title>depth</title>
+                                                  </topic>
+                                                  <topic id="5klfotkr0a36ddia0bmqsrg9si"
+                                                  timestamp="1342477349591">
+                                                  <title>html_tag</title>
+                                                  </topic>
+                                                  <topic id="6eisd80dmofrpu78mf1vrh6kbf"
+                                                  timestamp="1342477349591">
+                                                  <title>md_tag</title>
+                                                  </topic>
+                                                  <topic id="6rkpnck4ge6nhbeg1vpqi4k9q6"
+                                                  timestamp="1342477349591">
+                                                  <title>org_tag</title>
+                                                  </topic>
+                                                  <topic id="0nc3l4v5ui9lsgcot3s7ip8fd4"
+                                                  timestamp="1342477379694">
+                                                  <title>設定のないものは、プレーンテキストで出力</title>
+                                                  </topic>
+                                                  <topic id="3nppb2st0up09s13l4eetl7tj1"
+                                                  timestamp="1342477401326">
+                                                  <title>複数項目がある場合は、md_tagとorg_tagを優先</title>
+                                                  </topic>
+                                                  </topics>
+                                                  </children>
+                                                  </topic>
+                                                  </topics>
+                                                </children>
+                                            </topic>
+                                        </topics>
+                                    </children>
+                                </topic>
+                            </topics>
+                        </children>
+                    </topic>
+                    <topic id="24de3a49ve3rf2913t33i9mvt7" timestamp="1342467166369">
+                        <title>UnitTestを作る</title>
+                    </topic>
+                    <topic id="7ck3vrf0i6lacq7adpoerq03e1" timestamp="1342448555404">
+                        <title>インタフェース</title>
+                        <children>
+                            <topics type="attached">
+                                <topic id="5s5fmtv5eelpneb2bl28usocmi" timestamp="1342448555011">
+                                    <title>コマンドライン</title>
+                                </topic>
+                                <topic id="1r6t71c4612ctqsd1pghb8m055" timestamp="1342448557395">
+                                    <title>GUI</title>
+                                </topic>
+                            </topics>
+                        </children>
+                    </topic>
+                    <topic id="6fqqb8c4av95ikbe4uoqekgj4j" timestamp="1342446614098">
+                        <title>出力フォーマット</title>
+                        <children>
+                            <topics type="attached">
+                                <topic id="2t4cq68a9v91nr4sgc2a85r7ih" timestamp="1342339482201">
+                                    <title>org</title>
+                                </topic>
+                                <topic id="431rac65ch4cvjnn07e66si4sm" timestamp="1342339485055">
+                                    <title>markdown</title>
+                                </topic>
+                                <topic id="7hb1lrpioh5rhm4p2erp9hm2ur" timestamp="1342447527954">
+                                    <title>html</title>
+                                    <children>
+                                        <topics type="attached">
+                                            <topic id="1fa73iapa69n0n245idj9neg1l"
+                                                timestamp="1342447538825">
+                                                <title>markdownからはき出せるらしい</title>
+                                            </topic>
+                                        </topics>
+                                    </children>
+                                </topic>
+                            </topics>
+                        </children>
+                    </topic>
+                    <topic id="6hi5s34i9gntrd31ifevne8rdi" timestamp="1342447898885">
+                        <title>入力フォーマット</title>
+                        <children>
+                            <topics type="attached">
+                                <topic id="78trna32cv8j29nuu8s61vongj" timestamp="1342447930149"
+                                    xlink:href="http://code.google.com/p/xmind3/wiki/XMindFileFormat">
+                                    <title>XMind</title>
+                                </topic>
+                                <topic id="5r8ph2r2u7meb6vkjaluk4mngn" timestamp="1342447911297"
+                                    xlink:href="http://freemind.sourceforge.net/wiki/index.php/File_format">
+                                    <title>FreeMind</title>
+                                </topic>
+                            </topics>
+                        </children>
+                    </topic>
+                    <topic id="5n56lr7r7p1j38828o04re50gg" timestamp="1342448021414">
+                        <title>命名</title>
+                        <children>
+                            <topics type="attached">
+                                <topic id="53hnkt58dbcm901gh9c65tdi4b" timestamp="1342448004820">
+                                    <title>MindOrgDown</title>
+                                </topic>
+                                <topic id="0n003v4np8jj28kuae7e5c2hql" timestamp="1342448049044">
+                                    <title>MOrgdown</title>
+                                </topic>
+                            </topics>
+                        </children>
+                    </topic>
+                    <topic branch="folded" id="3ia4vqod14ilfmo16gjro10mkk" timestamp="1343205972330">
+                        <title>（旧）クラスの設計</title>
+                        <children>
+                            <topics type="attached">
+                                <topic id="2fej6u603j182ndfqgeqbvmgat" timestamp="1342467119534">
+                                    <title>Parser</title>
+                                    <children>
+                                        <topics type="attached">
+                                            <topic id="2c7kcg06b5iu2n15ogfpve5j12"
+                                                timestamp="1342479174734">
+                                                <title>XMindParser</title>
+                                                <children>
+                                                  <topics type="attached">
+                                                  <topic id="21hucdgn8faj77p2o59v5k3gi2"
+                                                  timestamp="1342468376796">
+                                                  <title>入力：XMindファイル</title>
+                                                  <children>
+                                                  <topics type="attached">
+                                                  <topic id="2d62nc5c17itm8tgc5ptsgcnb6"
+                                                  timestamp="1342468380068">
+                                                  <title>unzip</title>
+                                                  </topic>
+                                                  </topics>
+                                                  </children>
+                                                  </topic>
+                                                  <topic id="5tfti1pe26pedd8ugt8rjoiqke"
+                                                  timestamp="1342518949771">
+                                                  <title>出力：TreeDataStore</title>
+                                                  </topic>
+                                                  <topic id="7823pi08aro3o18p4338c5a38d"
+                                                  timestamp="1342475956637">
+                                                  <title>ライブラリ：Nokogiri</title>
+                                                  </topic>
+                                                  <topic id="1bo6js2na548gnrdu952gbpjc2"
+                                                  timestamp="1342479178560">
+                                                  <title>変数</title>
+                                                  <children>
+                                                  <topics type="attached">
+                                                  <topic id="69tprqb96bgeaj2hpum8l98vt2"
+                                                  timestamp="1342479180776">
+                                                  <title>depth</title>
+                                                  </topic>
+                                                  </topics>
+                                                  </children>
+                                                  </topic>
+                                                  </topics>
+                                                </children>
+                                            </topic>
+                                        </topics>
+                                    </children>
+                                </topic>
+                                <topic id="12cbtlrol4u9qmu3fvus2j55pd" timestamp="1342476593151">
+                                    <title>TreeDataStore</title>
+                                    <children>
+                                        <topics type="attached">
+                                            <topic id="4d40btnav14qp21i9ga83k0bfe"
+                                                timestamp="1342476228389">
+                                                <title>initialize</title>
+                                                <children>
+                                                  <topics type="attached">
+                                                  <topic id="5q9rd0dgddbr9kfp4401bbi5mv"
+                                                  timestamp="1342476402740">
+                                                  <title>buffer : Array</title>
+                                                  <children>
+                                                  <topics type="attached">
+                                                  <topic id="72phvbdd5pnd7vcfa0d6rvtv57"
+                                                  timestamp="1342476368289">
+                                                  <title>depth</title>
+                                                  </topic>
+                                                  <topic id="7om9d8h586jdk8uitv91rfjjro"
+                                                  timestamp="1342476371243">
+                                                  <title>text</title>
+                                                  </topic>
+                                                  </topics>
+                                                  </children>
+                                                  </topic>
+                                                  </topics>
+                                                </children>
+                                            </topic>
+                                            <topic id="0vhjladqq40kcc98s0ko75n7ob"
+                                                timestamp="1342519059147">
+                                                <title>push(depth, text)</title>
+                                            </topic>
+                                        </topics>
+                                    </children>
+                                </topic>
+                                <topic id="4igsd8jb4u7nr5ekh97u75qb0a" timestamp="1342477484463">
+                                    <title>Exporter</title>
+                                    <children>
+                                        <topics type="attached">
+                                            <topic id="09m975migtrs3fbi099sft38bk"
+                                                timestamp="1342477604534">
+                                                <title>Exporter</title>
+                                                <children>
+                                                  <topics type="attached">
+                                                  <topic id="39itm3ebt31nm2u3thehrvjc6a"
+                                                  timestamp="1342477604529">
+                                                  <title>text()</title>
+                                                  </topic>
+                                                  <topic id="6a1kfc5fhh11g28os03v6tgg9k"
+                                                  timestamp="1342477484463">
+                                                  <title>print()</title>
+                                                  </topic>
+                                                  </topics>
+                                                </children>
+                                            </topic>
+                                            <topic id="69pauihfp8o00abgqrosicmkkp"
+                                                timestamp="1342474564972">
+                                                <title>OrgExporter</title>
+                                            </topic>
+                                            <topic id="29r95jrqaes62plk2ak438en8e"
+                                                timestamp="1342467217495">
+                                                <title>MarkdownExporter</title>
+                                                <children>
+                                                  <topics type="attached">
+                                                  <topic id="0bap6m3e0u4somr5r3eab9tusc"
+                                                  timestamp="1342467217492">
+                                                  <title>HTMLExporter</title>
+                                                  </topic>
+                                                  </topics>
+                                                </children>
+                                            </topic>
+                                        </topics>
+                                    </children>
+                                </topic>
+                                <topic id="3vlsgt4rjqps1gibgdt8kitvkc" timestamp="1342508720293">
+                                    <title>Core</title>
+                                    <children>
+                                        <topics type="attached">
+                                            <topic id="3h7b6gru91e2kj129p96cca1us"
+                                                timestamp="1342478622194">
+                                                <title>parse()</title>
+                                            </topic>
+                                            <topic id="7lake02fn03qpis9duokrmdk5b"
+                                                timestamp="1342478537816">
+                                                <title>export()</title>
+                                            </topic>
+                                            <topic id="125hbfuvpeppk6t2ck3t0qeh23"
+                                                timestamp="1342478543254">
+                                                <title>write()</title>
+                                            </topic>
+                                            <topic id="32ekat7h2bcfekdup86u17d65j"
+                                                timestamp="1342508742766">
+                                                <title>変数</title>
+                                                <children>
+                                                  <topics type="attached">
+                                                  <topic id="7i0koun8vbc96vpd4esansmati"
+                                                  timestamp="1342508818511">
+                                                  <title>XMindファイル（XML）</title>
+                                                  </topic>
+                                                  <topic id="151offcs9bhnr1l6h4mej6sfeg"
+                                                  timestamp="1342508776376">
+                                                  <title>出力ファイル名</title>
+                                                  </topic>
+                                                  <topic id="4hcitv3n2b3ouk434m29l1vq2e"
+                                                  timestamp="1342508764183">
+                                                  <title>出力設定</title>
+                                                  </topic>
+                                                  </topics>
+                                                </children>
+                                            </topic>
+                                        </topics>
+                                    </children>
+                                </topic>
+                                <topic id="5i6fr9rgsgpbtt07cc9hrk7040" timestamp="1342509385009">
+                                    <title>Command</title>
+                                    <children>
+                                        <topics type="attached">
+                                            <topic id="5qkmdd66l8epc5sck3hh7m80l0"
+                                                timestamp="1342466989659">
+                                                <title>main関数にあたるもの</title>
+                                            </topic>
+                                            <topic id="4g7d5c4s5pj3qfimm10kntndr8"
+                                                timestamp="1342512492906">
+                                                <title>変数</title>
+                                                <children>
+                                                  <topics type="attached">
+                                                  <topic id="59f8qs9pk1dnvfqmjjj9c1mo7o"
+                                                  timestamp="1342512506523">
+                                                  <title>@option[:file_input] XMindファイル名</title>
+                                                  </topic>
+                                                  <topic id="72kbtgt3dpn5vq6qrtg3kfjl4j"
+                                                  timestamp="1342512514255">
+                                                  <title>@option[:file_output] 出力ファイル名</title>
+                                                  </topic>
+                                                  <topic id="086d0m9ktf53f3o4nal469vltf"
+                                                  timestamp="1342512538222">
+                                                  <title>@option[:file_config] 設定ファイル名</title>
+                                                  </topic>
+                                                  <topic id="056l3e4afosr2ds1e4sclmbk72"
+                                                  timestamp="1342512540746">
+                                                  <title>@option[:format] フォーマット(org, md,
+                                                  html)</title>
+                                                  </topic>
+                                                  </topics>
+                                                </children>
+                                            </topic>
+                                            <topic id="6bm1tcgmcp9814a9pris7p4jur"
+                                                timestamp="1342509385015">
+                                                <title>メソッド</title>
+                                                <children>
+                                                  <topics type="attached">
+                                                  <topic id="3tupptnb59d19nj4sudril9id3"
+                                                  timestamp="1342509385009">
+                                                  <title>parse_command(argv)</title>
+                                                  </topic>
+                                                  </topics>
+                                                </children>
+                                            </topic>
+                                            <topic id="2a0guqksdqd5ea1hapt22ji5me"
+                                                timestamp="1342508542371">
+                                                <title>オプション処理</title>
+                                                <children>
+                                                  <topics type="attached">
+                                                  <topic id="0r7j733out8jsi26hibnvm650k"
+                                                  timestamp="1342508548591"
+                                                  xlink:href="http://doc.ruby-lang.org/ja/1.9.2/library/optparse.html">
+                                                  <title>optparse</title>
+                                                  </topic>
+                                                  </topics>
+                                                </children>
+                                            </topic>
+                                            <topic id="1du1t1t3c58da6er9oddohrppp"
+                                                timestamp="1342477719692">
+                                                <title>オプション項目</title>
+                                                <children>
+                                                  <topics type="attached">
+                                                  <topic id="0bh3t4p7m8op9k8nfmu415kgf5"
+                                                  timestamp="1342477718169">
+                                                  <title>(-i) XMindファイル名</title>
+                                                  </topic>
+                                                  <topic id="2bn0dnk990ug3g7nn3nrm78tj2"
+                                                  timestamp="1342477685709">
+                                                  <title>-o 出力ファイル名</title>
+                                                  </topic>
+                                                  <topic id="6q3r1sfkdm44uf6r7s8r948rnf"
+                                                  timestamp="1342477729710">
+                                                  <title>-c 設定ファイル名</title>
+                                                  </topic>
+                                                  <topic id="7emuphnn3ot9cc292n9a66hau3"
+                                                  timestamp="1342477749471">
+                                                  <title>-f フォーマット(org, md, html)</title>
+                                                  </topic>
+                                                  </topics>
+                                                </children>
+                                            </topic>
+                                        </topics>
+                                    </children>
+                                </topic>
+                                <topic id="208ru1me19cjeb7s5ei8slnoah" timestamp="1342476651681">
+                                    <title>ConfigManager</title>
+                                    <children>
+                                        <topics type="attached">
+                                            <topic id="6dv7ejj55s284pdv4fvd6k319n"
+                                                timestamp="1342476493458">
+                                                <title>設定ファイル読み込み・書き出し</title>
+                                                <children>
+                                                  <topics type="attached">
+                                                  <topic id="7nmoao1i1url6qpqbt68jnp2qj"
+                                                  timestamp="1342476495908">
+                                                  <title>yaml</title>
+                                                  </topic>
+                                                  </topics>
+                                                </children>
+                                            </topic>
+                                            <topic id="1i4p4ei31pbfo134mk8ucpvu67"
+                                                timestamp="1342476783987">
+                                                <title>設定項目</title>
+                                                <children>
+                                                  <topics type="attached">
+                                                  <topic id="201c2tuh6dn7kp9vofq4lkks0r"
+                                                  timestamp="1342477381426">
+                                                  <title>depthとタグの対応</title>
+                                                  <children>
+                                                  <topics type="attached">
+                                                  <topic id="231oofo8muktrlbqkt4dnhail1"
+                                                  timestamp="1342477349591">
+                                                  <title>depth</title>
+                                                  </topic>
+                                                  <topic id="7dotdhr3vbq8k443hm3qrca755"
+                                                  timestamp="1342477349591">
+                                                  <title>html_tag</title>
+                                                  </topic>
+                                                  <topic id="18a651urleupkpcccb34jjool1"
+                                                  timestamp="1342477349591">
+                                                  <title>md_tag</title>
+                                                  </topic>
+                                                  <topic id="5fia4f6rfi6g4lhapbfkl3jc9g"
+                                                  timestamp="1342477349591">
+                                                  <title>org_tag</title>
+                                                  </topic>
+                                                  <topic id="7euo85kmcs72dje8i3454h9ui4"
+                                                  timestamp="1342477379694">
+                                                  <title>設定のないものは、プレーンテキストで出力</title>
+                                                  </topic>
+                                                  <topic id="6nctiop7rlbu97spsqosh559sa"
+                                                  timestamp="1342477401326">
+                                                  <title>複数項目がある場合は、md_tagとorg_tagを優先</title>
+                                                  </topic>
+                                                  </topics>
+                                                  </children>
+                                                  </topic>
+                                                  </topics>
+                                                </children>
+                                            </topic>
+                                        </topics>
+                                    </children>
+                                </topic>
+                            </topics>
+                        </children>
+                    </topic>
+                </topics>
+            </children>
+            <numbering number-format="org.xmind.numbering.none"/>
+        </topic>
+        <title>Sheet 1</title>
+    </sheet>
+</xmap-content>
