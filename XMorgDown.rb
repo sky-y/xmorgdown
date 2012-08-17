@@ -25,10 +25,6 @@ end
 class Exporter
   attr_reader :html
 
-  ORG = :ORG
-  MARKDOWN = :MARKDOWN
-  HTML = :HTML
-
   def initialize(html)
     @html = html
   end
@@ -38,12 +34,11 @@ end
 
 
 class Command
-  attr_reader :option
+  attr_reader :option,:argv
   
   def initialize(argv)
     @argv = argv
     @option = { }
-    @option[:format] = Exporter::MARKDOWN # default
     @option[:format_from] = 'html' # fixed
     @option[:format_to] = 'markdown' # default
     @option[:file_input] = ''
@@ -52,8 +47,6 @@ class Command
 
   # Parse command line options
   def parse()
-    @option[:file_input] = @argv.pop
-
     # Option Parser of optparse
     opt = OptionParser.new
     script_name = File.basename($0)
@@ -70,7 +63,7 @@ class Command
     output_formats_short = %w(markdown[default] org html latex rst plain)
     output_formats_long = %w(native json html html5 html+lhs html5+lhs s5 slidy slideous dzslides docbook opendocument latex latex+lhs beamer beamer+lhs context texinfo man markdown markdown+lhs plain rst rst+lhs mediawiki textile rtf org asciidoc odt docx epub)
     
-    str_output_formats = "Output formats: " + output_formats_short.join(', ') + ", ... (for other formats: see pandoc --help)"
+    str_output_formats = "Output formats: " + output_formats_short.join(', ') + ", ... \n\t\t\t\t\t(for other formats: see pandoc --help)"
     
     opt.on('-t FORMAT','--to=FORMAT',str_output_formats) {|v| @option[:format_to] = v }
     opt.on('-w FORMAT','--write=FORMAT',str_output_formats) {|v| @option[:format_to] = v }
@@ -85,13 +78,16 @@ class Command
     
     # Do parsing
     begin
-      opt.parse!(@argv)
+      pp @argv if DEBUG
+      opt.permute!(@argv)
     rescue => e
       # Catch exception when an option is wrong
       puts opt
       abort(e)
     end
     
+    @option[:file_input] = @argv.pop
+
     ## Check whether the filename ends with ".xmind"
     if not (@option[:file_input] =~ /^.*\.xmind$/)
       puts opt
