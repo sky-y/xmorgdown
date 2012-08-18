@@ -5,6 +5,11 @@ Date: August 19, 2012
 Copyright (c) 2012 Yuki Fujiwara \<sky.y.0079@gmail.com\>
 
 
+* XMind (English): <http://www.xmind.net/>
+* XMind (Japanese): <http://jp.xmind.net/>
+	* **CAUTION for Japanese**: XMind 3.3 (New Version) currently has a problem of Japanese input. Use XMind 3.2 (from Japanese site) for a while.
+
+
 ## Requirement
 * Ruby 1.9.3 or above
 	* Use of rvm is recommended
