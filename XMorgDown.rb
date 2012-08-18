@@ -7,6 +7,8 @@ require 'pp'
 require "./exporter"
 require "./parser"
 
+VERSION = "0.1"
+
 module XMOrgDown
 
   DEBUG = true
@@ -39,6 +41,7 @@ module XMOrgDown
     def convert()
       xml_to_html()
       html_to_pandoc()
+      
 
       if @option[:file_output] == ""
         # Without -o option
@@ -82,12 +85,16 @@ module XMOrgDown
       opt.on('-o FILE','--output FILE','Output Filename') {|v| @option[:file_output] = v }
       
       # Format(Output)
-      output_formats_short = %w(markdown[default] org html latex rst plain)
+      output_formats_short = %w(markdown org html latex rst plain)
       output_formats_long = %w(native json html html5 html+lhs html5+lhs s5 slidy slideous dzslides docbook opendocument latex latex+lhs beamer beamer+lhs context texinfo man markdown markdown+lhs plain rst rst+lhs mediawiki textile rtf org asciidoc odt docx epub)
-      str_output_formats = "Output formats: " + output_formats_short.join(', ') + ", ... \n\t\t\t\t\t(for other formats: see pandoc --help)"
+      str_output_formats = "Output formats: " + output_formats_short.join(', ') + ", ... \n\t\t\t\t\t(for other formats: see \"pandoc --help\")"
       
       opt.on('-t FORMAT','--to=FORMAT',str_output_formats) {|v| @option[:format_to] = v }
       opt.on('-w FORMAT','--write=FORMAT',str_output_formats) {|v| @option[:format_to] = v }
+      
+      # Other options for Pandoc
+      str_pandoc_options = "Pandoc options (Use double quotes like \"--atx-headers\")\n\t\t\t\t\t(for other options: see \"pandoc --help\")"
+      opt.on('--pandoc-options=OPTIONS',str_pandoc_options) {|v| @option[:pandoc_options] = v }
       
       # Help
       opt.on( '-h', '--help', 'Display this screen' ) do
