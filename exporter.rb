@@ -5,13 +5,15 @@ require 'pp'
 # require 'pandoc-ruby'
 require 'open3'
 
-module XMOrgDown
+module XMorgDown
+
   # Export a HTML to any filetypes with Pandoc
+  # Original Source: pandoc-ruby
+  # https://github.com/alphabetum/pandoc-ruby/blob/master/lib/pandoc-ruby.rb
   class Exporter
     attr_reader :result
     attr_accessor :html
 
-    # from https://github.com/alphabetum/pandoc-ruby/blob/master/lib/pandoc-ruby.rb
     @@bin_path = nil
   
     EXECUTABLES = %W[
@@ -73,7 +75,7 @@ if __FILE__ == $PROGRAM_NAME
   option[:format_to] = 'markdown' # default
   
   File.open("data/12.07.16_MOrgDown_idea/content.html") do |f|
-    exporter = XMOrgDown::Exporter.new(option, f.read)
+    exporter = XMorgDown::Exporter.new(option, f.read)
     exporter.export()
     puts exporter.result
     

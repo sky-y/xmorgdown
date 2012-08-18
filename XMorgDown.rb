@@ -9,7 +9,7 @@ require "./parser"
 
 VERSION = "0.1"
 
-module XMOrgDown
+module XMorgDown
 
   DEBUG = true
 
@@ -148,14 +148,14 @@ end
 ## main
 if __FILE__ == $PROGRAM_NAME
 
-  command = XMOrgDown::Command.new(ARGV)
+  command = XMorgDown::Command.new(ARGV)
   command.parse()
 
-  core = XMOrgDown::Core.new(command.option)
+  core = XMorgDown::Core.new(command.option)
   core.convert()
 
   # (debug) Confirm options
-  if XMOrgDown::DEBUG
+  if XMorgDown::DEBUG
     print 'option: '
     pp command.option
   end

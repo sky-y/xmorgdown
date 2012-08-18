@@ -5,7 +5,7 @@ require 'pp'
 require 'zipruby'
 require 'nokogiri'
 
-module XMOrgDown
+module XMorgDown
 
   class Parser
     attr_accessor :file_xmind
@@ -46,7 +46,7 @@ end
 if __FILE__ == $PROGRAM_NAME
   ## for test
   file_xmind = "/Users/yuki/Dropbox/Projects/app_dev/MOrgDown/data/12.07.16_MOrgDown_idea.xmind"
-  parser = XMOrgDown::Parser.new(file_xmind)
+  parser = XMorgDown::Parser.new(file_xmind)
   parser.parse()
   
   
