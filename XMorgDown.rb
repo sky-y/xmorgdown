@@ -4,47 +4,67 @@
 require "optparse"
 require 'pp'
 
-module XMorgDown
+require "./exporter"
+require "./parser"
+
+module XMOrgDown
 
   DEBUG = true
 
   class Core
+    attr_reader :result
 
-    def initialize()
-      
+    def initialize(option)
+      @option = option
+      @parser = Parser.new(option[:file_input])
+      @exporter = Exporter.new(option)
+      @result = ""
     end
 
-    def parse()
-      
+    # Parse and transform: XML -> HTML
+    def xml_to_html()
+      @parser.parse() 
+      @exporter.html = @parser.html_output
+      return @exporter.html
+    end
+    
+    # Export with Pandoc: HTML -> Markdown, Org, ...
+    def html_to_pandoc()
+      @exporter.export()
+      @result = @exporter.result
+      return @result
     end
 
-    def export()
+    # Convert and process XML with Pandoc at once
+    def convert()
+      xml_to_html()
+      html_to_pandoc()
+
+      if @option[:file_output] == ""
+        # Without -o option
+        puts @result
+      else
+        # Using option: -o filename
+        File.open(@option[:file_output],"w") do |f|
+          f.write(@result)
+        end
+      end
       
+      return @result
     end
   end
-
-
-  class Exporter
-    attr_reader :html
-
-    def initialize(html)
-      @html = html
-    end
-
-  end
-
 
 
   class Command
-    attr_reader :option,:argv
+    attr_reader :option, :argv
     
     def initialize(argv)
       @argv = argv
       @option = { }
       @option[:format_from] = 'html' # fixed
       @option[:format_to] = 'markdown' # default
-      @option[:file_input] = ''
-      @option[:file_output] = ''
+      @option[:file_input] = '' # XMind file (.xmind)
+      @option[:file_output] = '' # [option] 
     end
 
     # Parse command line options
@@ -68,7 +88,7 @@ module XMorgDown
       
       opt.on('-t FORMAT','--to=FORMAT',str_output_formats) {|v| @option[:format_to] = v }
       opt.on('-w FORMAT','--write=FORMAT',str_output_formats) {|v| @option[:format_to] = v }
-
+      
       # Help
       opt.on( '-h', '--help', 'Display this screen' ) do
         puts opt
@@ -92,6 +112,9 @@ module XMorgDown
         puts opt
         exit
       end
+
+      print "argv: " if DEBUG
+      pp @argv if DEBUG
       
       @option[:file_input] = @argv.pop
 
@@ -107,7 +130,9 @@ module XMorgDown
         abort("ERROR: wrong output format: "+ @option[:format_to])
       end
       
-    end
+    end # def parse()
+
+    
     
   end
 end
@@ -116,12 +141,14 @@ end
 ## main
 if __FILE__ == $PROGRAM_NAME
 
-  command = XMorgDown::Command.new(ARGV)
-
+  command = XMOrgDown::Command.new(ARGV)
   command.parse()
-  
+
+  core = XMOrgDown::Core.new(command.option)
+  core.convert()
+
   # (debug) Confirm options
-  if XMorgDown::DEBUG
+  if XMOrgDown::DEBUG
     print 'option: '
     pp command.option
   end

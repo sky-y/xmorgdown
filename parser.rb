@@ -21,8 +21,8 @@ module XMOrgDown
       @html_output = ''
     end
 
+    ## Parse a XMind XML and convert it to html
     def parse()
-      
       ## Read XMind file as a zip file
       Zip::Archive.open(@file_xmind) do |ar|
         ar.fopen(CONTENT_XML_FILE) do |f|
@@ -30,9 +30,9 @@ module XMOrgDown
         end
       end
 
-      ## parse XMind content.xml with Nokogiri and XSLT
-      ## TODO
-            
+      ## Parse XMind XML with Nokogiri and XSLT
+      nokogiri_xml = Nokogiri::XML(@xml_content)
+      @html_output = @nokogiri_xslt.apply_to(nokogiri_xml).to_s
     end
 
     
