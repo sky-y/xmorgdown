@@ -1,8 +1,9 @@
 # XMorgDown
 Exports XMind Mindmap to any documents with Pandoc.
 
-version: 0.1  
-date: August 19, 2012
+Date: August 19, 2012  
+Copyright (c) 2012 Yuki Fujiwara \<sky.y.0079@gmail.com\>
+
 
 ## Requirement
 * Ruby 1.9.3 or above
@@ -10,7 +11,8 @@ date: August 19, 2012
 * Pandoc 1.9.4.2 or above
 	* See installation: <http://johnmacfarlane.net/pandoc/installing.html>
 	* You can choose either:
-		* cabal install (with Haskell Platform, I prefer personally) or		* Pandoc Package Installer (without Haskell Platform)
+		* cabal install (with Haskell Platform, I prefer personally) or
+		* Pandoc Package Installer (without Haskell Platform)
 * Nokogiri (XML Parser for Ruby)
 	* See installation: <http://nokogiri.org/tutorials/installing_nokogiri.html>
 	* homebrew 0.9 has some problems: read the URL above carefully.
@@ -31,7 +33,19 @@ date: August 19, 2012
 
 
 ## Examples
-
+### Example 1 (Japanese: 寿限無)
 	ruby XMorgDown.rb -t markdown -o test1.md test1.xmind --pandoc-options="--atx-headers"
+
+* Original XMind file: test1.xmind (test1.png as image)
+* Result Org File: test1.org
+* Result Markdown FIle: test1.md
+* "--atx-headers": use `#` and `##` as `<h1>` and `<h2>` header output 
+
+
+### Example 2 (English: Lorem Ipsum)
 	ruby XMorgDown.rb -t org -o test2.org test2.xmind
+
+* Original XMind file: test2.xmind (test2.png as image)
+* Result Org File: test2.org
+* Result Markdown FIle: test2.md
 
