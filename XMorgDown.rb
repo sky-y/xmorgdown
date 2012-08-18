@@ -8,8 +8,13 @@ module XMorgDown
   DEBUG = false
 end
 
-require "./exporter"
-require "./parser"
+# Add current path to load path
+# https://github.com/komagata/lokka/blob/master/init.rb
+$:.unshift File.dirname(__FILE__)
+
+# my ruby files
+require "exporter"
+require "parser"
 
 VERSION = "0.1"
 
