@@ -4,6 +4,10 @@
 require "optparse"
 require 'pp'
 
+module XMorgDown
+  DEBUG = false
+end
+
 require "./exporter"
 require "./parser"
 
@@ -11,7 +15,6 @@ VERSION = "0.1"
 
 module XMorgDown
 
-  DEBUG = true
 
   class Core
     attr_reader :result

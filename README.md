@@ -14,7 +14,8 @@ date: August 19, 2012
 * Nokogiri (XML Parser for Ruby)
 	* See installation: <http://nokogiri.org/tutorials/installing_nokogiri.html>
 	* homebrew 0.9 has some problems: read the URL above carefully.
-
+* zipruby (<https://bitbucket.org/winebarrel/zip-ruby/wiki/Home>)
+	* Install with: `gem install zipruby`
 
 
 ## Usage
@@ -27,3 +28,10 @@ date: August 19, 2012
     -h, --help                       Display this screen
 
 * For detail of formats and Pandoc options: See [Pandoc User's Guide](http://johnmacfarlane.net/pandoc/README.html)
+
+
+## Examples
+
+	ruby XMorgDown.rb -t markdown -o test1.md test1.xmind --pandoc-options="--atx-headers"
+	ruby XMorgDown.rb -t org -o test2.org test2.xmind
+

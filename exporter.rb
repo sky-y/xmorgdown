@@ -2,7 +2,6 @@
 # -*- coding: utf-8 -*-
 
 require 'pp'
-# require 'pandoc-ruby'
 require 'open3'
 
 module XMorgDown
@@ -40,7 +39,7 @@ module XMorgDown
       executable = @@bin_path ? File.join(@@bin_path, @executable) : @executable
       options = "--standalone --from #{@option[:format_from]} --to #{@option[:format_to]} #{@option[:pandoc_options]}"
       command = executable + " " + options
-      puts command
+      puts command if DEBUG
       @result = execute(command)
       
       # @converter = PandocRuby.new(@html,
