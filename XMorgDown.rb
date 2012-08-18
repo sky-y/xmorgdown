@@ -107,7 +107,6 @@ module XMorgDown
         abort("ERROR: wrong output format: "+ @option[:format_to])
       end
       
-      
     end
     
   end
