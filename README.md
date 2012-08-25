@@ -7,7 +7,7 @@ Copyright (c) 2012 Yuki Fujiwara \<sky.y.0079@gmail.com\>
 
 * XMind (English): <http://www.xmind.net/>
 * XMind (Japanese): <http://jp.xmind.net/>
-	* **CAUTION for Japanese**: XMind 3.3 (New Version) currently has a problem of Japanese input. Use XMind 3.2 (from Japanese site) for a while.
+	* **CAUTION for Japanese**: XMind 2012 (New Version) currently has a problem of Japanese input. Use XMind 3.2 (from Japanese site) for a while.
 
 
 ## Requirement
@@ -38,19 +38,29 @@ Copyright (c) 2012 Yuki Fujiwara \<sky.y.0079@gmail.com\>
 
 
 ## Examples
+Sample files are in `samples/` directory.
+
 ### Example 1 (Japanese: 寿限無)
-	ruby XMorgDown.rb -t markdown -o test1.md test1.xmind --pandoc-options="--atx-headers"
+	ruby XMorgDown.rb -t markdown -o test1.md samples/test1.xmind --pandoc-options="--atx-headers"
+
+* It makes a file "test1.md" as in Markdown (ATX-headered) style.
+
+#### Example files
 
 * Original XMind file: test1.xmind (test1.png as image)
-* Result Org File: test1.org
-* Result Markdown FIle: test1.md
+* Sample Result (Org File): test1.org
+* Sample Result (Markdown File): test1.md
 * "--atx-headers": use `#` and `##` as `<h1>` and `<h2>` header output 
 
 
 ### Example 2 (English: Lorem Ipsum)
-	ruby XMorgDown.rb -t org -o test2.org test2.xmind
+	ruby XMorgDown.rb -t org -o test2.org samples/test2.xmind
+
+* It makes a file "test2.org" in Org style.
+
+#### Example files
 
 * Original XMind file: test2.xmind (test2.png as image)
-* Result Org File: test2.org
-* Result Markdown FIle: test2.md
+* Result (Org File): test2.org
+* Result (Markdown File): test2.md
 
