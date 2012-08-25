@@ -16,6 +16,10 @@
         <xsl:text>
         </xsl:text>
     </xsl:template>
+    
+    <xsl:template name="output">
+        <xsl:value-of select="ns1:title"  xmlns:ns1="urn:xmind:xmap:xmlns:content:2.0"/>        
+    </xsl:template>
 
 
 
@@ -54,7 +58,7 @@
             <xsl:call-template name="double_blank"/>
             <xsl:call-template name="double_blank"/>
             <h2>
-                <xsl:value-of select="ns1:title"/>
+                <xsl:call-template name="output"></xsl:call-template>
             </h2>
             <xsl:apply-templates/>
         </xsl:for-each>
@@ -65,7 +69,7 @@
         <xsl:for-each select="ns1:topic">
 <!--            <xsl:call-template name="double_blank"/>-->
             <h3>
-                <xsl:value-of select="ns1:title"/>
+                <xsl:call-template name="output"></xsl:call-template>
             </h3>
             <xsl:apply-templates/>
         </xsl:for-each>
@@ -76,7 +80,7 @@
         <xsl:for-each select="ns1:topic">
 <!--            <xsl:call-template name="double_blank"/>-->
             <h4>
-                <xsl:value-of select="ns1:title"/>
+                <xsl:call-template name="output"></xsl:call-template>
             </h4>
             <xsl:apply-templates/>
         </xsl:for-each>
@@ -87,7 +91,7 @@
         <xsl:for-each select="ns1:topic">
 <!--            <xsl:call-template name="double_blank"/>-->
             <h5>
-                <xsl:value-of select="ns1:title"/>
+                <xsl:call-template name="output"></xsl:call-template>
             </h5>
             <xsl:apply-templates/>
         </xsl:for-each>
@@ -98,7 +102,7 @@
         <xsl:for-each select="ns1:topic">
 <!--            <xsl:call-template name="double_blank"/>-->
             <h6>
-                <xsl:value-of select="ns1:title"/>
+                <xsl:call-template name="output"></xsl:call-template>
             </h6>
             <xsl:apply-templates/>
         </xsl:for-each>
@@ -110,7 +114,7 @@
             <xsl:for-each select="ns1:topic">
                 <!--            <xsl:call-template name="double_blank"/>-->
                 <li>
-                    <xsl:value-of select="ns1:title"/>
+                    <xsl:call-template name="output"></xsl:call-template>
                     <xsl:apply-templates/>
                 </li>
             </xsl:for-each>
@@ -125,7 +129,7 @@
         <xsl:call-template name="double_blank"/>
         <xsl:for-each select="ns1:topic">
             <h2>
-                <xsl:value-of select="ns1:title"/>
+                <xsl:call-template name="output"></xsl:call-template>
             </h2> <xsl:apply-templates/> </xsl:for-each>
     </xsl:template>-->
 
