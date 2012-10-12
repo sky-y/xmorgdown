@@ -10,18 +10,14 @@
 もし内容が大きく食い違う場合は、`README.md`の方に従ってください。
 
 ## Pandocで出力できるドキュメント形式
-> HTML formats: XHTML, HTML5, and HTML slide shows using Slidy, Slideous, S5, or DZSlides.
-> 
-> Word processor formats: Microsoft Word docx, OpenOffice/LibreOffice ODT, OpenDocument XML
-> 
-> Ebooks: EPUB
-> 
-> Documentation formats: DocBook, GNU TexInfo, Groff man pages
-> 
-> TeX formats: LaTeX, ConTeXt, LaTeX Beamer slides
-PDF via LaTeX
 
-> Lightweight markup formats: Markdown, reStructuredText, AsciiDoc, MediaWiki markup, Emacs Org-Mode, Textile
+	HTML formats: XHTML, HTML5, and HTML slide shows using Slidy, Slideous, S5, or DZSlides.
+	Word processor formats: Microsoft Word docx, OpenOffice/LibreOffice ODT, OpenDocument XML
+	Ebooks: EPUB
+	Documentation formats: DocBook, GNU TexInfo, Groff man pages
+	TeX formats: LaTeX, ConTeXt, LaTeX Beamer slides
+	PDF via LaTeX
+	Lightweight markup formats: Markdown, reStructuredText, AsciiDoc, MediaWiki markup, Emacs Org-Mode, Textile
 
 
 
@@ -35,7 +31,7 @@ PDF via LaTeX
 		* Pandoc Package Installer (Haskell Platform不使用)
 * Nokogiri (Ruby用XMLパーサ)
 	* インストール方法はこちらを参照： <http://nokogiri.org/tutorials/installing_nokogiri.html>
-	* homebrew 0.9 は問題があるので、以下のURLを読んでください：
+	* homebrew 0.9 は問題があるので、上記のURLを読んでください：
 * zipruby (<https://bitbucket.org/winebarrel/zip-ruby/wiki/Home>)
 	* 以下のコマンドでインストール： `gem install zipruby`
 	* rvm使用時に動作しない場合は、rvmのバージョンをよく確認してください
