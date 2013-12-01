@@ -1,9 +1,15 @@
 #!/usr/bin/env ruby
 # -*- coding: utf-8 -*-
 
+# Add current path to load path
+# https://github.com/komagata/lokka/blob/master/init.rb
+$:.unshift File.dirname(__FILE__)
+
 require 'pp'
 require 'zipruby'
 require 'nokogiri'
+
+SRC_DIR = File.dirname(__FILE__)
 
 module XMorgDown
 
@@ -11,9 +17,10 @@ module XMorgDown
     attr_accessor :file_xmind
     attr_reader :xml_content, :html_output
     CONTENT_XML_FILE = "content.xml"
-    XSLT_FILE = "content.xsl"
+    XSLT_FILE = "#{SRC_DIR}/content.xsl"
     
     def initialize(file_xmind)
+      Dir::chdir(".")
       @file_xmind = file_xmind
       @xslt = File.read(XSLT_FILE)
       @nokogiri_xslt = Nokogiri::XSLT(@xslt)

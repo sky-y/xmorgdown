@@ -12,6 +12,9 @@ end
 # https://github.com/komagata/lokka/blob/master/init.rb
 $:.unshift File.dirname(__FILE__)
 
+# Set the current directory to this directory
+#Dir.chdir(File.dirname(__FILE__))
+
 # my ruby files
 require "exporter"
 require "parser"
