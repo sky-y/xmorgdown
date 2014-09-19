@@ -1,6 +1,8 @@
 # XMorgDown
 [XMind](http://jp.xmind.net/)のマインドマップ(.xmind)をPandoc経由でいろんなドキュメント形式に変換するRubyスクリプトです。
 
+このソフトウェアは、MITライセンスのもとで公開されています。`LICENSE`を参照してください。
+
 * 対応ソフト：XMind 3.2(日本語版): <http://jp.xmind.net/>
 	* **注意**: XMind 2012 (最新版) は日本語入力の面でバグがあります。当面はXMind 3.2を使用してください。
 	

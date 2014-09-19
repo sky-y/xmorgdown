@@ -4,6 +4,8 @@ Exports XMind Mindmap to any documents with Pandoc.
 Date: August 19, 2012  
 Copyright (c) 2012 Yuki Fujiwara \<sky.y.0079@gmail.com\>
 
+This software is released under the MIT License, see `LICENSE`.
+
 
 * XMind (English): <http://www.xmind.net/>
 * XMind (Japanese): <http://jp.xmind.net/>
